@@ -1,0 +1,6 @@
+<input type="text" [ngModel]="this.ahvNumber" (ngModelChange)="this.update($event)">
+
+
+  <div>Your AHV number {{ this.ahvNumber }} is: {{ this.labelValid }}</div>
+
+  <div>Checksum for {{ this.ahvNumber }} is: {{ this.checkSum }}</div>
